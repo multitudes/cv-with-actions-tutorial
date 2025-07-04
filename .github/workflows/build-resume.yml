@@ -33,29 +33,3 @@ jobs:
         name: resume-pdf
         path: cv/resume.pdf
         retention-days: 30
-        
-    - name: Check if this is main/master branch
-      id: check_branch
-      run: |
-        if [[ "${{ github.ref }}" == "refs/heads/main" || "${{ github.ref }}" == "refs/heads/master" ]]; then
-          echo "is_main=true" >> $GITHUB_OUTPUT
-        else
-          echo "is_main=false" >> $GITHUB_OUTPUT
-        fi
-        
-    # Optional: Create a release with the PDF when pushing to main/master
-    - name: Create Release
-      if: steps.check_branch.outputs.is_main == 'true'
-      uses: softprops/action-gh-release@v1
-      with:
-        tag_name: resume-${{ github.run_number }}
-        name: Resume Build ${{ github.run_number }}
-        body: |
-          Automatically generated resume PDF from commit ${{ github.sha }}
-          
-          Build date: ${{ github.event.head_commit.timestamp }}
-        files: cv/resume.pdf
-        draft: false
-        prerelease: false
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
