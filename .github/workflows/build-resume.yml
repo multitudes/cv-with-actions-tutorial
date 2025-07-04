@@ -21,12 +21,12 @@ jobs:
         compiler: pdflatex
         args: -interaction=nonstopmode -file-line-error
 
-    - name: Upload PDF artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: resume.pdf
-        path: cv/resume.pdf
-        retention-days: 30
+    # - name: Upload PDF artifact
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: resume.pdf
+    #     path: cv/resume.pdf
+    #     retention-days: 30
 
     - name: Copy PDF to repo root and commit
       if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
