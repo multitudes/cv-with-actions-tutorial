@@ -30,7 +30,7 @@ jobs:
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
       with:
-        name: resume-pdf
+        name: resume.pdf
         path: cv/resume.pdf
         retention-days: 30
 
