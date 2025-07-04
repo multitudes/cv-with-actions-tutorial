@@ -1,15 +1,9 @@
 name: Build LaTeX Resume
 
-on:
-  push:
-    branches: [ main, master ]
-    paths:
-      - 'cv/**'
-  pull_request:
-    branches: [ main, master ]
-    paths:
-      - 'cv/**'
-  workflow_dispatch:
+on: [push]
+
+permissions:
+  contents: write
 
 jobs:
   build-resume:
