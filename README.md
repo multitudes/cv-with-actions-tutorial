@@ -12,10 +12,9 @@ Perfect for job seekers who want to:
 
 ### Option 1: Auto-Compile LaTeX Resume (Recommended)
 If you want to edit your CV in LaTeX and have it automatically compiled and deployed:
-1. Use the provided LaTeX template (or bring your own)
+1. Use and edit the provided LaTeX template (or bring your own) - Commit and push the changes
 2. GitHub Actions automatically compiles your `.tex` files into a PDF
-3. PDF gets pushed to GitHub Pages for instant hosting
-4. Edit your CV → Push to GitHub → Live in seconds
+3. PDF gets created and deployed to GitHub Pages for instant hosting
 
 ### Option 2: Simple PDF Upload
 Just want to host an existing PDF? Remove the `build-resume.yml` file from the `.github/workflows/` folder.
@@ -44,6 +43,9 @@ Click the "Fork" button at the top of this page to create your own copy.
 *Note: GitHub Pages is free for public repositories. Private repos require a GitHub Pro account.*
 
 **Example:** Your CV will be available at: `https://johndoe.github.io/cv-with-actions-tutorial/resume.pdf`
+
+*Replace `johndoe` with your GitHub username. The deployment will be visible on your GitHub Pages.*  
+
 
 ### Step 3: Customize Your CV
 - **LaTeX users**: Edit files in the `cv/` folder
@@ -84,7 +86,7 @@ This is an open source project. Contributions, ideas, and improvements are welco
 ### LaTeX Template Credit
 The included LaTeX resume template is based on the work by [TimmyChan](https://github.com/TimmyChan). Original template: [Data Science Tech Resume Template](https://www.overleaf.com/latex/templates/data-science-tech-resume-template/zcdmpfxrzjhv)
 
-### Some ideas for the Apple Wallet Integration
+### Apple Wallet Integration Ideas
 - [Ionic Enterprise Digital Passes Tutorial](https://github.com/ionic-enterprise/tutorials-digital-passes/tree/main/backend) - Backend implementation guide for creating digital passes
 - [PassKit Generator](https://github.com/alexandercerutti/passkit-generator) - Node.js library for generating Apple Wallet passes
 - [Ionic Digital Passes Guide](https://ionic.io/docs/tutorials/integrations/digitial-passes/apple-wallet-passes/creating) - Step-by-step tutorial for creating Apple Wallet passes
