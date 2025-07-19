@@ -3,8 +3,9 @@ name: Build and Publish Resume PDF
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - 'docs/resume.pdf'  # Prevent infinite loop
+    paths:
+      - 'cv/**'  # Only run when LaTeX files change
+      - '!docs/resume.pdf'  # Prevent infinite loop
 
 permissions:
   contents: write
