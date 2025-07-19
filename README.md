@@ -81,12 +81,18 @@ This is an open source project. Contributions, ideas, and improvements are welco
 
 ## Resources
 
-Apple Wallet - About certificates - explained here:    
-https://github.com/ionic-enterprise/tutorials-digital-passes/tree/main/backend  
-https://github.com/alexandercerutti/passkit-generator  
-https://ionic.io/docs/tutorials/integrations/digitial-passes/apple-wallet-passes/creating  
+### LaTeX Template Credit
+The included LaTeX resume template is based on the work by [TimmyChan](https://github.com/TimmyChan). Original template: [Data Science Tech Resume Template](https://www.overleaf.com/latex/templates/data-science-tech-resume-template/zcdmpfxrzjhv)
 
-archived but still valid Apple docs  
-https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/index.html#//apple_ref/doc/uid/TP40012195-CH1-SW1  
+### Some ideas for the Apple Wallet Integration
+- [Ionic Enterprise Digital Passes Tutorial](https://github.com/ionic-enterprise/tutorials-digital-passes/tree/main/backend) - Backend implementation guide for creating digital passes
+- [PassKit Generator](https://github.com/alexandercerutti/passkit-generator) - Node.js library for generating Apple Wallet passes
+- [Ionic Digital Passes Guide](https://ionic.io/docs/tutorials/integrations/digitial-passes/apple-wallet-passes/creating) - Step-by-step tutorial for creating Apple Wallet passes
 
-https://developer.apple.com/documentation/walletpasses  
+#### Apple Developer Documentation
+- [PassKit Programming Guide (Archived)](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/index.html#//apple_ref/doc/uid/TP40012195-CH1-SW1) - Comprehensive guide to Apple Wallet pass development
+- [Wallet Passes Documentation](https://developer.apple.com/documentation/walletpasses) - Current Apple developer documentation for Wallet passes
+
+## License
+
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License - see the [LICENSE](LICENSE) file for details.  
